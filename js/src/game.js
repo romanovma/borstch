@@ -212,7 +212,7 @@ var Shelve = React.createClass({
       width: '100%'
     };
     return (
-      <canvas style={imgStyle} id = {this.props.position} onClick = {this.handleClick} onTouch = {this.handleClick}/>
+      <canvas style={imgStyle} id = {this.props.position} onClick = {this.handleClick} onTouchStart = {this.handleClick}/>
     )
   }
 });
@@ -242,7 +242,7 @@ var WolfImage = React.createClass({
       width: '100%'
     };
     var src = './images/' + this.props.pose + '.jpg';
-    return (<img src ={src} style={imgStyle} alt = {this.props.pose} onClick = {this.handleClick} onTouch = {this.handleClick} />);
+    return (<img src ={src} style={imgStyle} alt = {this.props.pose} onClick = {this.handleClick} onTouchStart = {this.handleClick} />);
   }
 });
 
