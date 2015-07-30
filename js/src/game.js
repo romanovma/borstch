@@ -63,7 +63,6 @@ var GameBox = React.createClass({
     this.setState({pose: element});
   },
   incrTotal: function (position, food) {
-
     console.log(this.props.allowable.indexOf(food) > -1);
     if (position === this.state.pose && this.props.allowable.indexOf(food) > -1)
     {
@@ -106,7 +105,7 @@ var GameBox = React.createClass({
         <div className = 'row' style={divHelperStyle}/>
         <div className = 'row' style={divStyle}>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={divStyle}>
-            <div style={divHelperStyle}/>
+
             <div> <Shelve
               position = {UP_LEFT}
               onClick = {this.handleClick}
@@ -128,7 +127,7 @@ var GameBox = React.createClass({
             <WolfImage pose = {this.state.pose} onClick = {this.handleClick} />
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={divStyle}>
-            <div style={divHelperStyle}/>
+            
             <div> <Shelve
               position = {UP_RIGHT}
               onClick = {this.handleClick}
